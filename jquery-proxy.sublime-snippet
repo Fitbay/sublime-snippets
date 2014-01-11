@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$.proxy(${1}, this)${2}
+]]></content>
+	
+	<tabTrigger>proxy</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

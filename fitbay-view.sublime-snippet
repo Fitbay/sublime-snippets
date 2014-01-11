@@ -1,0 +1,37 @@
+<snippet>
+    <content><![CDATA[
+define([
+	"backbone/views/base/${1:ViewType}",
+	${4:,}
+	"templates/${2:TemplatePath}/${3:FileName}"
+], function ($1, ${5:,}template) {
+	
+	var $3 = $1.extend({
+		template: template,
+
+		initialize: function () {
+			$1.prototype.initialize.apply(this, Array.prototype.slice.call(arguments));
+
+			${6}
+		},
+
+		events: {
+
+		},
+
+		triggers: {
+
+		},
+
+		ui: {
+
+		}
+	});
+	
+	return $3;
+}));
+
+]]></content>
+    <tabTrigger>view</tabTrigger>
+    <description>Fitbay view</description>
+</snippet>

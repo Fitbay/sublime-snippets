@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+define([
+	"backbone/controllers/base/BaseController"
+], function (BaseController) {
+	
+	var ${1:FileName} = BaseController.extend({
+		initialize: function () {
+			
+		}
+	});
+	
+	return $1;
+}));
+
+]]></content>
+    <tabTrigger>controller</tabTrigger>
+    <description>Fitbay controller</description>
+</snippet>
