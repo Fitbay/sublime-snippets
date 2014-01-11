@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+${1:method}: function (${2:arguments}) {
+	${3:// body..}
+}
+]]></content>
+	<tabTrigger>meth</tabTrigger>
+	<scope>source.js</scope>
+	<description>Method</description>
+</snippet>

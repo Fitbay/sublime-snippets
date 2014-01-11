@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+console.log("%c${1:success!}", "background:green; color:white; padding: 0 20px;");
+]]></content>
+	<tabTrigger>log-g</tabTrigger>
+	<scope>source.js</scope>
+	<description>Console log: Green Background </description>
+</snippet>
