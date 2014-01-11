@@ -11,7 +11,7 @@ define([
 	});
 	
 	return $1;
-}));
+});
 
 ]]></content>
     <tabTrigger>controller</tabTrigger>
