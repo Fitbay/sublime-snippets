@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+listenToOnce(${1:someEventDispatcher}, "${2:event}", ${3:eventHandler});
+]]></content>
+    <tabTrigger>listenToOnce</tabTrigger>
+    <scope>source.js</scope>
+    <description>listenToOnce</description>
+</snippet>
