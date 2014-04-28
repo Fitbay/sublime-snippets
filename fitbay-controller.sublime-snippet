@@ -3,6 +3,8 @@
 define([
 	"app/controllers/base/BaseController"
 ], function (BaseController) {
+
+	"use strict";
 	
 	var ${1:FileName} = BaseController.extend({
 		initialize: function () {

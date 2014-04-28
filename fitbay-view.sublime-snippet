@@ -4,6 +4,8 @@ define([
 	"app/views/base/${1:ViewType}",
 	"templates/${2:TemplatePath}/${3:FileName}"
 ], function ($1, template) {
+
+	"use strict";
 	
 	var $3 = $1.extend({
 		template: template,
