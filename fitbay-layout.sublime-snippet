@@ -1,0 +1,43 @@
+<snippet>
+    <content><![CDATA[
+define([
+	"app/views/base/BaseLayout",
+	"templates/${2:TemplatePath}/${1:Name}Layout"
+], function (BaseLayout, template) {
+
+	"use strict";
+	
+	var $1Layout = BaseLayout.extend({
+
+		template: template,
+
+		itemView: $1ItemView,
+
+		events: {
+
+		},
+
+		triggers: {
+
+		},
+
+		ui: {
+
+		},
+
+		initialize: function () {
+			BaseLayout.prototype.initialize.apply(this, Array.prototype.slice.call(arguments));
+
+			${3}
+		}
+
+		
+	});
+	
+	return $1Layout;
+});
+
+]]></content>
+    <tabTrigger>layout</tabTrigger>
+    <description>Fitbay Layout</description>
+</snippet>

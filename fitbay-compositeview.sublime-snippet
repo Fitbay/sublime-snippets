@@ -1,0 +1,46 @@
+<snippet>
+    <content><![CDATA[
+define([
+	"app/views/base/BaseCompositeView",
+	"./${1:Name}ItemView",
+	"templates/${2:TemplatePath}/$1CompositeView"
+], function (BaseCompositeView, $1ItemView, template) {
+
+	"use strict";
+	
+	var $1CompositeView = BaseCompositeView.extend({
+
+		template: template,
+
+		itemView: $1ItemView,
+
+		itemViewContainer: "[data-role='items']",
+
+		events: {
+
+		},
+
+		triggers: {
+
+		},
+
+		ui: {
+
+		},
+
+		initialize: function () {
+			BaseCompositeView.prototype.initialize.apply(this, Array.prototype.slice.call(arguments));
+
+			${4}
+		}
+
+		
+	});
+	
+	return $1CompositeView;
+});
+
+]]></content>
+    <tabTrigger>compositeview</tabTrigger>
+    <description>Fitbay CompositeView</description>
+</snippet>
