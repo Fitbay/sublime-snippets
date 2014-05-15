@@ -11,8 +11,6 @@ define([
 
 		template: template,
 
-		itemView: $1ItemView,
-
 		events: {
 
 		},
