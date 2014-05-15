@@ -25,6 +25,10 @@ define([
 
 		},
 
+		regions: {
+			"": "[data-region-name='']"
+		},
+
 		initialize: function () {
 			BaseLayout.prototype.initialize.apply(this, Array.prototype.slice.call(arguments));
 
