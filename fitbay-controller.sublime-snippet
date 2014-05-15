@@ -1,18 +1,33 @@
 <snippet>
     <content><![CDATA[
 define([
-	"app/controllers/base/BaseController"
-], function (BaseController) {
+	"app/controllers/base/BaseController",
+	"./$1Layout"
+], function (BaseController, $1Layout) {
 
 	"use strict";
 	
-	var ${1:FileName} = BaseController.extend({
+	var ${1:Name}Controller = BaseController.extend({
+		
 		initialize: function () {
-			
+
+			this._layout = new $1Layout({
+
+			});
+			this.listenTo(this._layout, "show", this._handleLayoutShown);
+			this.setCloseTrigger(this._layout, "close");
+		},
+
+		getView: function () {
+			return this._layout;
+		},
+
+		_handleLayoutShown: function () {
+
 		}
 	});
 	
-	return $1;
+	return $1Controller;
 });
 
 ]]></content>
