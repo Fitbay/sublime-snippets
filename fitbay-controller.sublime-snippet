@@ -25,6 +25,7 @@ define([
 		_handleLayoutShown: function () {
 
 		}
+		
 	});
 	
 	return $1Controller;
