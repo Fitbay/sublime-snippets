@@ -11,6 +11,8 @@ define([
 		
 		initialize: function () {
 
+			BaseController.prototype.initialize.apply(this, Array.prototype.slice.call(arguments));
+
 			this._layout = new $1Layout({
 
 			});
