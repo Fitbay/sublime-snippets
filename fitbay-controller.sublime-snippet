@@ -13,15 +13,15 @@ define([
 
 			BaseController.prototype.initialize.apply(this, Array.prototype.slice.call(arguments));
 
-			this._layout = new $1Layout({
+			this._view = new $1Layout({
 
 			});
-			this.listenTo(this._layout, "show", this._handleLayoutShown);
-			this.setCloseTrigger(this._layout, "close");
+			this.listenTo(this._view, "show", this._handleLayoutShown);
+			this.setCloseTrigger(this._view, "close");
 		},
 
 		getView: function () {
-			return this._layout;
+			return this._view;
 		},
 
 		_handleLayoutShown: function () {
